@@ -13,10 +13,13 @@
 }
 .navbar{
     background-image: linear-gradient(to right, #4eabff , #61dcfe);
-    padding: 20px 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     font-size: 18px;
-    ul{
-        color: #000;
+    padding: 0 40px;
+    .nav-item{
+        color: #000 !important;
     }
     button{
         width: 150px;
@@ -41,12 +44,16 @@
 }
 .header-main{
     color: #fff;
-    padding: 0 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 1400px;
+    padding: 0;
     .header-main-left{
         display: flex;
         justify-content: end;
         flex-direction: column;
+        padding: 0;
     }
     h1{
         width: 400px;
@@ -259,6 +266,7 @@
         align-items: center;
         justify-content: center;
         gap: 40px;
+        padding: 0;
         .card{
             width: 300px;
             height: 500px;
@@ -446,9 +454,11 @@
     }
 }
 
-@media (max-width:1330px) {
+@media (max-width: 1310px) {
     .header{
-            
+        nav{
+
+        }
     }
     .header-main{
         display: flex;
@@ -495,11 +505,16 @@
 
     }
 
-    .changelife{
+    .changelife-main{
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-direction: column !important;
         align-items: center;
+    }
+    .about-header{
+        p{
+            width: 450px;
+        }
     }
     .plan-main{
         display: flex;
@@ -510,21 +525,30 @@
     .feedback-main{
         flex-direction: column;
     }
-}
-@media (max-width:1000px){
-    .header{
-        nav{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            
+    .feedback-header{
+        p{
+            width: 450px !important;
         }
-        
     }
-    .plan-main{
+    .changelife-main-right{
+        img{
+            width: 450px !important;
+        }
+    }
+    .screen{
+        img{
+            width: 450px !important;
+        }   
+    }
+    .advantager-main-left{
         display: flex;
-        justify-content: center;
-        align-items: center;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .advantage-main{
+        img{
+            width: 450px;
+        }
     }
 }
